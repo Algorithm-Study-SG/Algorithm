@@ -45,7 +45,7 @@ Algorithm
 
 1. 상위 폴더 하위에 자신의 `GIHUB` 아이디의 폴더를 만듭니다.
 2. 주차별로 `week${주차 번호}`의 폴더를 만듭니다. 예시) 2주차이면 `week02` 폴더를 만듭니다.
-3. 하위에 Main_${문제 번호}_${문제 이름}.java` 혹은Main_${문제 번호}_${문제 이름}.java.cpp` 소스 코드를 작성합니다.
+3. 하위에 Main*${문제 번호}*${문제 이름}.java` 혹은Main_${문제 번호}\_${문제 이름}.java.cpp` 소스 코드를 작성합니다.
 
 설명 문서를 추가할 경우 추가하여도 좋습니다.
 
@@ -120,7 +120,7 @@ Algorithm
 
 해당 위치에서 `git clone https://github.com/Algorithm-Study-SG/Algorithm.git` 를 진행합니다.
 
->  ⭐ Info  
+> ⭐ Info  
 > `git clone`은 두개의 명령어가 한번에 실행이 됩니다.
 >
 > 1. `git init`

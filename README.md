@@ -45,7 +45,7 @@ Algorithm
 
 1. 상위 폴더 하위에 자신의 `GIHUB` 아이디의 폴더를 만듭니다.
 2. 주차별로 `week${주차 번호}`의 폴더를 만듭니다. 예시) 2주차이면 `week02` 폴더를 만듭니다.
-3. 하위에 `BJ${문제 번호}.java` 혹은 `BJ${문제 번호}.cpp` 소스 코드를 작성합니다.
+3. 하위에 Main_${문제 번호}_${문제 이름}.java` 혹은Main_${문제 번호}_${문제 이름}.java.cpp` 소스 코드를 작성합니다.
 
 설명 문서를 추가할 경우 추가하여도 좋습니다.
 
@@ -99,12 +99,56 @@ Algorithm
 > ⚠️ Warning  
 > `main` 브랜치는 절대로 삭제하시면 안됩니다.
 
+## 🚀 커밋 컨벤션
+
+- `Solved` : 문제 풀이에 성공하였을 때 사용합니다.
+- `Failed` : 문제 풀이를 실패하였을 때 사용합니다.
+- `Docs` : 문서를 수정할 때 사용합니다.
+
 ## 🌈 PR 규칙
 
 - PR 제목은 다음과 같이 작성합니다. `[주차] 내용` 예시로는 다음과 같습니다. 예시) [week01] 4문제 풀었습니다.
 - PR의 내용은 특이사항과 같은 내용을 작성해 주시고 추후 템플릿을 작성하겠습니다.
 - 리뷰어로 전부를 추가하고 코드를 **반드시 보고** 궁금한 부분이 있으면 **스터디 당일날 혹은 코멘트로 질문**합니다.
 - `Merge`후 원격저장소에 있는 브랜치는 삭제합니다.
+
+## 🖥️ Local 로 가져오기
+
+### Clone 하는 방법
+
+파일을 저장할 폴더로 `CLI`로 이동합니다.
+
+해당 위치에서 `git clone https://github.com/Algorithm-Study-SG/Algorithm.git` 를 진행합니다.
+
+>  ⭐ Info  
+> `git clone`은 두개의 명령어가 한번에 실행이 됩니다.
+>
+> 1. `git init`
+> 2. `git remote origin https://github.com/Algorithm-Study-SG/Algorithm.git`
+
+### Fork 하는 방법
+
+1. `Fork` 버튼을 누릅니다.
+
+<img width="1256" alt="2023-08-04_17-37-00" src="https://github.com/Algorithm-Study-SG/Algorithm/assets/74192619/a6eac77e-d18d-4b18-9d4e-889527d4b6be">
+
+2. `Owner` 은 자신으로 선택한 후 `Repository name`을 원하는 것으로 정한 뒤 `Create fork`를 누르면 완성입니다.
+
+<img width="819" alt="2023-08-04_17-38-08" src="https://github.com/Algorithm-Study-SG/Algorithm/assets/74192619/e4b33b64-9c92-4b3e-8bc0-ad040eb1bf19">
+
+3. 로컬과 연동하는 방법은 `Clone` 하는 법을 참고해주시면 감사합니다.
+
+## ✉️ PR 코멘트 하는 방법
+
+1. `Pull request` 를 눌러 `PR`로 들어간 뒤 `Files changed`를 클릭합니다.
+
+<img width="684" alt="2023-08-04_17-43-30" src="https://github.com/Algorithm-Study-SG/Algorithm/assets/74192619/de7baf12-2c73-4b0b-8477-1997293aaa37">
+
+2. 원하는 부분의 코드를 드래그 혹은 클릭 등을 사용하여 리뷰를 할 수 있습니다.
+
+![Aug-04-2023 17-42-18](https://github.com/Algorithm-Study-SG/Algorithm/assets/74192619/062ba821-5b37-4a59-ba66-8cb74ac93fa0)
+
+3. `Review Changed` 를 눌러 코멘트, 허가, 등을 할 수 있습니다.
 
 ## 💽 Git 명령어 간편 설명서
 

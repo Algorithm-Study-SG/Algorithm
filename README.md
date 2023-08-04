@@ -112,6 +112,16 @@ Algorithm
 - 리뷰어로 전부를 추가하고 코드를 **반드시 보고** 궁금한 부분이 있으면 **스터디 당일날 혹은 코멘트로 질문**합니다.
 - `Merge`후 원격저장소에 있는 브랜치는 삭제합니다.
 
+### Fork PR 하는 방법
+
+1. 자신의 `Fork Repository` 로 소스 코드를 `PUSH` 합니다.
+2. `GITHUB` 홈페이지에서 다음과 같이 진행합니다.
+
+![Fork PR](https://github.com/Algorithm-Study-SG/Algorithm/assets/74192619/b748ad97-d38a-421d-9252-258f94f7102a)
+
+> ⚠️ Warning  
+> 반드시 머지 대상을 원본 저장소의 `Main` 으로 해주세요.
+
 ## 🖥️ Local 로 가져오기
 
 ### Clone 하는 방법
@@ -165,4 +175,4 @@ Algorithm
 ---
 
 해당 README 는 다음 `Repository`를 참고하여 제작했습니다.
-[CodeSquad-2023-BE-Study Algorithm-Study](https://github.com/CodeSquad-2023-BE-Study/Algorithm-Study/tree/week23)
+[CodeSquad-2023-BE-Study Algorithm-Study](

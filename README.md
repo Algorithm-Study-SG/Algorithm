@@ -112,6 +112,13 @@ Algorithm
 - 리뷰어로 전부를 추가하고 코드를 **반드시 보고** 궁금한 부분이 있으면 **스터디 당일날 혹은 코멘트로 질문**합니다.
 - `Merge`후 원격저장소에 있는 브랜치는 삭제합니다.
 
+### Clone PR 하는 방법
+
+1. `Remote Repository` 의 자신의 브랜치로 `PUSH` 합니다.
+2. `GITHUB` 홈페이지에서 다음과 같이 진행합니다.
+
+![Clone PR](https://github.com/Algorithm-Study-SG/Algorithm/assets/74192619/d5306ca1-6392-48ec-b857-b5c7df5b550f)
+
 ### Fork PR 하는 방법
 
 1. 자신의 `Fork Repository` 로 소스 코드를 `PUSH` 합니다.

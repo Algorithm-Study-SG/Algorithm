@@ -181,5 +181,5 @@ Algorithm
 
 ---
 
-해당 README 는 다음 `Repository`를 참고하여 제작했습니다.
-[CodeSquad-2023-BE-Study Algorithm-Study](
+해당 README 는 다음 `Repository`를 참고하여 제작했습니다.  
+[CodeSquad-2023-BE-Study Algorithm-Study](https://github.com/CodeSquad-2023-BE-Study/Algorithm-Study)

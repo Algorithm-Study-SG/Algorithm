@@ -27,8 +27,8 @@ public class Main_1339_단어수학 {
         for(int i = 0; i < n; i++){
             int digit = 1;
             for(int j = words[i].length() - 1; j >= 0; j--){
-                int cache = words[i].charAt(j) - 'A';
-                alphabet[cache] += digit;
+                int cache = words[i].charAt(j) - 'A'; // alphabet 배열에서의 위치
+                alphabet[cache] += digit; // 그 위치에 자릿수를 더한다
                 digit *= 10;
             }
         }

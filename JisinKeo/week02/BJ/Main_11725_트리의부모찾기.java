@@ -18,7 +18,7 @@ public class Main_11725_트리의부모찾기 {
             graph[i] = new ArrayList<>();
         }
 
-        for (int i = 0; i < N - 1; i++) {
+        for (int i = 0; i < N - 1; i++) { // 트리 상에서 연결된 두 정점을 graph에 입력한다
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
@@ -37,7 +37,7 @@ public class Main_11725_트리의부모찾기 {
         while (!queue.isEmpty()) {
             int curr = queue.poll();
 
-            for (int child : graph[curr]) {
+            for (int child : graph[curr]) { // curr에 해당하는 child를 이용해 값을 업데이트
                 if (!visited[child]) {
                     visited[child] = true;
                     parent[child] = curr;

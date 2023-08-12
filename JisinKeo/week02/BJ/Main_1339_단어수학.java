@@ -36,7 +36,6 @@ public class Main_1339_단어수학 {
         Arrays.sort(alphabet);
 
         int result = 0;
-
         int num = 9;
 
         for(int i = 25; i >= 0; i--){

@@ -58,7 +58,7 @@ public class Main_1967_트리의_지름 {
 		}
 	}
 
-	public static class Node {
+	public static class Node { // 값들을 저장할 클래스 선언
 		private int number;
 		private int value;
 

@@ -50,7 +50,6 @@ public class Main_1325_효율적인해킹 {
 
     private static void solve() {
         for (int i = 1; i <= computerCount; i++) {
-            System.out.println(i);
             bfs(i);
         }
     }

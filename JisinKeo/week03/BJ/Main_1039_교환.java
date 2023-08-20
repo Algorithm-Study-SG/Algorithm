@@ -3,6 +3,10 @@ package JisinKeo.week03.BJ;
 import java.io.*;
 import java.util.*;
 
+/**
+ * 메모리 : 56488 KB
+ * 시간 : 240 ms
+ */
 public class Main_1039_교환 {
     static String n;
     static int k, result;

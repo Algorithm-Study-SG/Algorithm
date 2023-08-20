@@ -1,5 +1,7 @@
 package INSEA_99.week03.BJ;
 
+// 736 ms
+
 import java.io.*;
 import java.util.*;
 public class Main_1062_가르침 {

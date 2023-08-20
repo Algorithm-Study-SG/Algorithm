@@ -1,5 +1,7 @@
 package INSEA_99.week03.BJ;
 
+// 520 ms
+
 import java.io.*;
 import java.util.*;
 

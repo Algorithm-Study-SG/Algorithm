@@ -39,11 +39,11 @@ public class Main_1325_효율적인_해킹{
 
 	static final int MAX = 10003;
 	
-	static int n, m;
-	static boolean visited[];
-	static List<Integer>[] adj;
-	static int[] HackingComputers;
-	static int maxHackingCnt;
+	static int n, m;	// 노드 수, 신뢰 관계 수
+	static boolean visited[];	// 방문 여부 저장
+	static List<Integer>[] adj;	// 인접 리스트
+	static int[] HackingComputers;	// 해킹 가능 컴퓨터 수
+	static int maxHackingCnt;	// 최대 해킹 가능 컴퓨터 수
 
 	
 	public static void main(String[] args) throws IOException {
@@ -57,21 +57,21 @@ public class Main_1325_효율적인_해킹{
 
 	static void input() throws IOException {
 		st = new StringTokenizer(br.readLine());
-		n = Integer.parseInt(st.nextToken());
-		m = Integer.parseInt(st.nextToken());
-		HackingComputers = new int[n+1];
-		adj = new ArrayList[n+1];
+		n = Integer.parseInt(st.nextToken());	// 노드 수
+		m = Integer.parseInt(st.nextToken());	// 신뢰 관계 수
+		HackingComputers = new int[n+1];	// 해킹 가능 컴퓨터 수
+		adj = new ArrayList[n+1];	// 인접 리스트 초기화
 		for(int i = 1; i<=n;++i) adj[i] = new ArrayList<>();
 		for(int i = 0; i < m; ++i) {
 			st = new StringTokenizer(br.readLine());
-			int a = Integer.parseInt(st.nextToken());
+			int a = Integer.parseInt(st.nextToken());	// b가 a를 신뢰함
 			int b = Integer.parseInt(st.nextToken());
 			adj[a].add(b);
 		}
 	}
 	
 	static void output() throws IOException{
-		for(int i = 1; i<=n;++i) {
+		for(int i = 1; i<=n;++i) {	// 출력
 			if(HackingComputers[i] == maxHackingCnt) {
 				bw.write(i + " ");
 			}
@@ -79,16 +79,16 @@ public class Main_1325_효율적인_해킹{
 	}
 	
 	static void run() {
-		for (int i = 1; i <= n; i++) {
+		for (int i = 1; i <= n; i++) {	// 노드 완전 탐색하여 해킹 가능 컴퓨터 수 확인
 			visited = new boolean[n + 1];
             bfs(i);
 		}
-		for (int i = 1; i <= n; i++) {
+		for (int i = 1; i <= n; i++) {	// 최대 수 구하기
 			maxHackingCnt = maxHackingCnt > HackingComputers[i]? maxHackingCnt : HackingComputers[i];
 		}
 	}
 	
-	static void bfs(int node) {
+	static void bfs(int node) {	// bfs
 		Deque<Integer> q = new ArrayDeque<>();
         q.add(node);
         visited[node] = true;
@@ -97,7 +97,7 @@ public class Main_1325_효율적인_해킹{
             for(int next : adj[now]){
                 if(!visited[next]){
                     q.add(next);
-                    HackingComputers[next]++;
+                    HackingComputers[next]++;	// 해킹 가능 컴퓨터 수 추가
                     visited[next] = true;
                 }
             }

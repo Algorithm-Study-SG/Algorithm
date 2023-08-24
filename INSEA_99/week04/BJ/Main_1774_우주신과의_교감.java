@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.*;
 import java.awt.Point;
 
-/* 메모리 : 33936KB
- * 시간 : 528ms
+/* 메모리 : 33816 KB
+ * 시간 : 308 ms
  * 
  * idea1 : 초기 연결된 노드는 visited 처리 후 최소 스패닝 트리 프림 사용
  * 
@@ -13,11 +13,11 @@ import java.awt.Point;
  * 
  * idea2 : 초기 연결된 노드는 인접 리스트에 추가 후 프림 알고리즘을 통한 방문 시 visited 처리
  * 
- * --> Solved! 528 ms
+ * --> Solved! 33936 KB, 528 ms
  * 
  * idea3 : idea2 + 노드 다 방문한 경우 종료
  * 
- * --> Solved! 308 ms
+ * --> Solved! 33816 KB, 308 ms
  * 
  */
 

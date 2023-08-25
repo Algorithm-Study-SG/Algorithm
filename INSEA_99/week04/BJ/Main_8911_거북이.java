@@ -8,8 +8,8 @@ import java.io.OutputStreamWriter;
 
 import java.util.StringTokenizer;
 
-/* 메모리 : KB
- * 시간 : ms
+/* 메모리 : 23776 KB
+ * 시간 : 408 ms
  * 
  * idea1 : 구현
  * 

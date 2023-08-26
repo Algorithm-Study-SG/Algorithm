@@ -9,6 +9,9 @@ import java.util.*;
  * IDEA 01 : 0번 부터 시작하여 크루스칼 알고리즘을 사용하여 최소 거리를 구합니다.
  * 정점과 간선의 수가 비슷하기 때문에 프림과 큰 차이가 없습니다.
  * 이후 전체 금액에서 구한 최소 금액을 빼면 절약할 수 있는 금액을 얻을 수 있습니다.
+ * 
+ * 시간 : 1416ms
+ * 메모리 : 291524kb
  */
 public class Main_6497_전력난 {
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

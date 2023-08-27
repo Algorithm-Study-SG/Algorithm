@@ -6,8 +6,13 @@ import java.io.InputStreamReader;
 
 /**
  * 결과
+ * Exception
  * 시간 : 640ms
  * 메모리 : 144824KB
+ * 
+ * Default
+ * 시간 : 440ms
+ * 메모리 : 32452KB
  */
 public class Main_8911_거북이 {
 
@@ -96,7 +101,7 @@ public class Main_8911_거북이 {
         /**
          * 왼쪽으로 회전을 할 때 `direction`이 0미만이 되면 `3`으로 수정한다.
          */
-        private void turnLeft() {
+        private void turnLeftWithException() {
             try {
                 if (direction - 1 < 0) {
                     throw new RuntimeException();
@@ -105,6 +110,10 @@ public class Main_8911_거북이 {
             } catch (RuntimeException e) {
                 direction = 3;
             }
+        }
+
+        private void turnLeft() {
+            direction = direction - 1 < 0 ? 3 : direction - 1;
         }
 
         private void updateMaxAndMinByPos(Pos pos) {

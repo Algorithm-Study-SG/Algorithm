@@ -8,6 +8,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+/**
+ *  메모리 : 15952 KB
+ *  시간 : 152 ms
+ */
 public class Main_9470_Strahler {
 
     static int t, k, m, p;

@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 결과
+ * 시간 : 640ms
+ * 메모리 : 144824KB
+ */
 public class Main_8911_거북이 {
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

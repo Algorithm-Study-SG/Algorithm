@@ -27,7 +27,7 @@ public class Main_6497_전력난 {
     }
 
     public static int find(int x){
-        if(parent[x] != x) parent[x] = find(parent[x]);
+        if(parent[x] != x) parent[x] = find(parent[x]); // path compression
         return parent[x];
     }
 
@@ -69,7 +69,7 @@ public class Main_6497_전력난 {
                 int a = Integer.parseInt(st.nextToken());
                 int b = Integer.parseInt(st.nextToken());
                 int c = Integer.parseInt(st.nextToken());
-                sum += c;
+                sum += c; // 입력받는 간선의 가중치를 하나씩 더 해준다.
                 edges.add(new Edge(a, b, c));
             }
 
@@ -77,8 +77,8 @@ public class Main_6497_전력난 {
 
             for (Edge edge : edges) {
                 if (find(edge.src) != find(edge.dest)) {
-                    sum -= edge.weight;
-                    union(edge.src, edge.dest);
+                    sum -= edge.weight; // 총 가중치에서 mst에 포함되는 간선의 가중치를 뺀다.
+                    union(edge.src, edge.dest); // mst 만들기
                 }
             }
 

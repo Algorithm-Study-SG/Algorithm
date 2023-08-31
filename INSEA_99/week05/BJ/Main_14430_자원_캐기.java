@@ -8,6 +8,17 @@ import java.io.OutputStreamWriter;
 
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
+/*
+ * 메모리 : 20205 KB
+ * 시간 : 192ms
+ * 
+ * idea1 : 가장 위의 행부터 탐색하며 위 혹은 왼쪽 중 큰 값을 저장한다.
+ * Solved!
+ */
+
+=======
+>>>>>>> eea4858fe7a75ab332f9d1bd6738251e2674044e
 public class Main_14430_자원_캐기 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -53,4 +64,8 @@ public class Main_14430_자원_캐기 {
 			}
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eea4858fe7a75ab332f9d1bd6738251e2674044e

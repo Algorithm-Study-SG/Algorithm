@@ -8,7 +8,6 @@ import java.io.OutputStreamWriter;
 
 import java.util.StringTokenizer;
 
-<<<<<<< HEAD
 /*
  * 메모리 : 20205 KB
  * 시간 : 192ms
@@ -17,8 +16,6 @@ import java.util.StringTokenizer;
  * Solved!
  */
 
-=======
->>>>>>> eea4858fe7a75ab332f9d1bd6738251e2674044e
 public class Main_14430_자원_캐기 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -64,8 +61,4 @@ public class Main_14430_자원_캐기 {
 			}
 		}
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> eea4858fe7a75ab332f9d1bd6738251e2674044e

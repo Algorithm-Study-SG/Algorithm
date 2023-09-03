@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 /**
- * 메모리 : 272712 KB
- * 시간 : 1412 ms
+ * 메모리 : 272004 KB
+ * 시간 : 1240 ms
  */
 public class Main_1005_ACMCraft {
 
@@ -21,6 +21,9 @@ public class Main_1005_ACMCraft {
 
         for(int i = 1; i < N+1; i++){
             if(sum[i] == 0){
+                if(i == W) {
+                    return d[i];
+                }
                 dp[i] = d[i];
                 deque.add(i);
             }
@@ -48,7 +51,7 @@ public class Main_1005_ACMCraft {
 
         }
 
-        return d[W];
+        return 0;
 
     }
     public static void main(String[] args) throws IOException {

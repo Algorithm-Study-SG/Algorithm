@@ -45,10 +45,10 @@ public class Main_2109_순회강연 {
         for(int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
 
-            int dInput = Integer.parseInt(st.nextToken());
             int pInput = Integer.parseInt(st.nextToken());
+            int dInput = Integer.parseInt(st.nextToken());
 
-            list.add(new Lecture(dInput, pInput));
+            list.add(new Lecture(pInput, dInput));
         }
 
         Collections.sort(list, new Comparator<Lecture>() {

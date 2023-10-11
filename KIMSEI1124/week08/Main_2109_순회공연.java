@@ -1,4 +1,4 @@
-package KIMSEI1124.week07;
+package KIMSEI1124.week08;
 
 import java.io.BufferedReader;
 import java.io.IOException;

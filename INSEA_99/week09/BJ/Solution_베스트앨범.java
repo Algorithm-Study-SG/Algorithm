@@ -28,7 +28,7 @@ import java.util.ArrayList;
  * 
  */
 
-class Solution {
+class Solution_베스트앨범 {
 	public int[] solution(String[] genres, int[] plays) {
 		List<Integer> tempAnswer = new ArrayList<>();
 

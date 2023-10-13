@@ -1,6 +1,6 @@
 import java.util.*;
 
-// 정확성  테스트
+// 버전1 정확성  테스트
 // 테스트 1 〉	통과 (321.33ms, 99.4MB)
 // 테스트 2 〉	통과 (186.66ms, 104MB)
 // 테스트 3 〉	통과 (325.05ms, 86.4MB)
@@ -13,6 +13,20 @@ import java.util.*;
 // 테스트 10 〉	통과 (194.90ms, 86.4MB)
 // 테스트 11 〉	통과 (219.56ms, 94.4MB)
 // 테스트 12 〉	통과 (203.82ms, 86.2MB)
+
+// 버전2 정확성  테스트
+// 테스트 1 〉	통과 (0.90ms, 85.2MB)
+// 테스트 2 〉	통과 (14.72ms, 87.6MB)
+// 테스트 3 〉	통과 (0.10ms, 84.6MB)
+// 테스트 4 〉	통과 (18.60ms, 105MB)
+// 테스트 5 〉	통과 (233.90ms, 95.7MB)
+// 테스트 6 〉	통과 (0.11ms, 87.5MB)
+// 테스트 7 〉	통과 (0.96ms, 87.6MB)
+// 테스트 8 〉	통과 (201.80ms, 89.2MB)
+// 테스트 9 〉	통과 (0.14ms, 89.3MB)
+// 테스트 10 〉	통과 (14.24ms, 91.3MB)
+// 테스트 11 〉	통과 (5.39ms, 90.8MB)
+// 테스트 12 〉	통과 (3.47ms, 87MB)
 
 class Solution_42839_소수_찾기 {
 
@@ -28,7 +42,8 @@ class Solution_42839_소수_찾기 {
         length=numbers.length();
         visited=new boolean[length];
         
-        fillPrime();
+        // fillPrime(); 버전1
+        fillPrime(length); // 버전2
         
         // 들어오는 String형 데이터를 int배열로 전환
         int[] number=new int[length];
@@ -60,13 +75,19 @@ class Solution_42839_소수_찾기 {
     }
     
     // 에라스토테네스의 체 완성하기
-    void fillPrime(){
+    // void fillPrime(){ 버전1
+    void fillPrime(int length){ // 버전2
         notPrime[0]=true;
         notPrime[1]=true;
         notPrime[4]=true;
-        for(int i=2;i<=3162;i++){
+
+        int maxNumber=(int)Math.pow(10,length); // 버전2
+
+        // for(int i=2;i<=3162;i++){ 버전1
+        for(int i=2; i <= (int)Math.sqrt(maxNumber) + 1; i++){ // 버전2
             int count=2;
-            while(i * count < 10000000){
+            // while(i * count < 10000000){ 버전1
+            while(i * count < maxNumber){ // 버전2
                 notPrime[i * count]=true;
                 count++;
             }
